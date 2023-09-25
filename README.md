@@ -1,4 +1,4 @@
-# GitHub User Avatar Finder Web App
+# [GitHub User Avatar Finder Web App](https://git-avatar-search.netlify.app/)
 
 Welcome to the documentation for the GitHub User Avatar Finder Web App. This documentation will guide you through the usage, features, and implementation details of this web application.
 
