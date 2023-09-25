@@ -5,7 +5,7 @@ import UseGithub from '../../hooks/useGithub'
 function SearchUser() {
     const [username, setUsername] = useState(``)
     const [user, setUser] = UseGithub(username)
-    console.log(user);
+    // console.log(user);
     const deBouncer = useDebouncer((e) => setUsername(e.target.value))
 
     return (
@@ -20,10 +20,10 @@ function SearchUser() {
                 className='border-2 border-gray-200 w-3/4 outline-none py-3 rounded-lg p-2'
                 />
             </div>
-            <div className='max-w-sm h-auto border-2 border-black p-2 mx-auto text-center '>
+            <div className='max-w-sm h-auto pl-8 p-2 mx-auto text-center mt-14'>
                 <img src={user.avatar} width={250} className='max-h-md rounded-xl' />
                 <h2 className='text-md font-semibold bg-slate-50 rounded-r-md relative bottom-10 w-36'>
-                    {(user.name) ? user.name : ''}
+                    {(user.name) ? user.name : username}
                 </h2>
             </div>
         </div>

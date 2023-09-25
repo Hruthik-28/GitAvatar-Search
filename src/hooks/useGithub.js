@@ -7,7 +7,7 @@ function UseGithub(userName) {
 
         const response = await fetch(`https://api.github.com/users/${userName}`)
         const data = await response.json()
-        console.log(data);
+        // console.log(data);
         
         setUser({
             name: data.name,
